@@ -15,17 +15,14 @@ const Floor = ({
     { length: numOfElevators },
     (_, index) => index
   );
-
   return (
     <tbody>
-      <tr key={floor.level}>
+      <tr>
         <Level floor={floor} />
-
         {roomsFloor.map((room) => (
           <ElevatorBox
             key={room}
             elevator={elevators.find((elevator) => elevator.id === room)}
-            boxId={room}
             onTransitionEnd={onTransitionEnd}
           />
         ))}

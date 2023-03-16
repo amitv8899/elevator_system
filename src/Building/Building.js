@@ -148,13 +148,8 @@ const Building = ({ numsFloor, numOfElevators }) => {
   };
 
   const onTransitionEnd = (elevator) => {
-    // elevatorAudio.play();
-
     const elevatorTraget = parseInt(elevator.target.id);
     elevators[elevatorTraget].elevatorAudio.play();
-    // const newFloor = elevators.find(
-    //   (elevator) => elevator.id === elevatorTraget
-    // ).job;
 
     const arrivalFloor = elevators[elevatorTraget].nextFloor;
 
@@ -162,7 +157,7 @@ const Building = ({ numsFloor, numOfElevators }) => {
       `time to hnadle the floor is ${
         (performance.now() - floors[9 - (arrivalFloor + 1)].workingTime) / 1000
       } sec`
-    ); // remember the floors index is reverse
+    ); // the floors index is reverse
 
     const newElevators = elevators.map((elevator) =>
       elevator.id === elevatorTraget

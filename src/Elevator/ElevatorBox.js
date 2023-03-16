@@ -1,15 +1,9 @@
 import React from "react";
 import Elevator from "./Elevator";
 
-const ElevatorBox = ({
-  elevator,
-  boxId,
-  enterElevator,
-
-  onTransitionEnd,
-}) => {
+const ElevatorBox = ({ elevator, onTransitionEnd }) => {
   return (
-    <th className="elevatorBox" key={boxId}>
+    <th className="elevatorBox">
       {elevator ? (
         <Elevator elevator={elevator} onTransitionEnd={onTransitionEnd} />
       ) : null}
