@@ -1,0 +1,18 @@
+.elevatorImage {
+  width: 4rem;
+  height: 2.1rem;
+  transition: top 3s ease-in-out;
+}
+
+.elevatorBox {
+  background-color: white;
+  border: 1px solid rgba(243, 243, 243, 255);
+  height: 4rem;
+  width: 7.9rem;
+}
+
+.elevator {
+  width: 4rem;
+  height: 2.1rem;
+  position: "relative";
+}

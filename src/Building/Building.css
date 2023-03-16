@@ -1,0 +1,13 @@
+.building {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2.4rem;
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: larger;
+}

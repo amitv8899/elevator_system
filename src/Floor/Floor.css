@@ -1,0 +1,43 @@
+.buttonLevel {
+  width: 4rem;
+  height: 1.6rem;
+  border: 0;
+  color: white;
+  margin-left: 1rem;
+  visibility: hidden;
+  font-size: 0.6rem;
+  border-radius: 7%;
+}
+
+.floorLabel {
+  font-size: 1.1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+}
+
+.floorName {
+  text-align: end;
+}
+
+.btnCall {
+  background-color: rgba(91, 205, 136, 255);
+  visibility: visible;
+  display: block;
+}
+
+.btnWaitng {
+  background-color: red;
+  visibility: visible;
+  display: block;
+  pointer-events: none;
+}
+
+.btnArrived {
+  color: rgba(91, 205, 136, 255);
+  background-color: transparent;
+  border-color: rgba(91, 205, 136, 255);
+  border: 1px solid;
+  visibility: visible;
+  display: block;
+  pointer-events: none;
+}
